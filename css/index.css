@@ -1,0 +1,581 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* リンク内の位置調節 */
+#event{
+    margin-top: -100px;
+    padding-top:100px;
+}
+
+#news{
+    margin-top: -100px;
+    padding-top:100px;
+}
+
+
+
+/* htmlの設定 */
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+
+    #page-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 77%;
+    z-index: 9999;
+    }
+
+    #page-top a{
+        background: #F0080C;
+        text-decoration: none;
+        color: #fff;
+        width: 100px;
+        padding: 30px 0;
+        text-align: center;
+        display: block;
+        border-radius: 5px;
+        -webkit-transition: background 0.3s linear;
+        -moz-transition: background 0.3s linear;
+        -ms-transition: background 0.3s linear;
+        -o-transition: background 0.3s linear;
+        transition: background 0.3s linear;
+    }
+
+    #page-top a:hover{
+        text-decoration: none;
+        background: #E9888A;
+    }
+
+    nav{
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        background-color: #FFF;
+        padding: 10px 200px;
+        z-index: 500;
+        box-sizing: border-box;
+    }
+
+        nav .icon{
+            width: 138px;
+            height: 60px;
+            background-image: url("../images/logo/logo.svg");
+            position: relative;
+            top: 13%;
+        }
+
+        nav a{
+            text-decoration: none;
+            text-align: center;
+            color: #424242;
+            font-size: 18px;
+            
+        }
+
+        /* hoverしたときにnav一覧にトランジションがかかる */
+        nav a#icon01{
+            transition: color 0.3s linear, top 0.3s linear;
+        }
+
+        nav a#icon01:hover{
+            color: #FF9C00;
+            position: relative;
+            bottom: 5px;
+        }
+
+        nav a#icon02{
+            transition: color 0.3s linear, top 0.3s linear;
+        }
+
+        nav a#icon02:hover{
+            color: #0001F1;
+            position: relative;
+            bottom: 5px;
+        }
+
+        nav a#icon03{
+            transition: color 0.3s linear, top 0.3s linear;
+        }
+
+        nav a#icon03:hover{
+            color: #E90000;
+            position: relative;
+            bottom: 5px;
+        }
+
+        nav a#icon04{
+            transition: color 0.3s linear, top 0.3s linear;
+            
+        }
+
+        nav a#icon04:hover{
+            color: #B000AC;
+            position: relative;
+            bottom: 5px;
+        }
+
+    #taisaku{
+        height: 100px;
+    }
+
+    #contents{
+        width: 100%;
+    }
+
+        #contents #video{
+            width: 100%;
+            height: 450px;
+            background-color: #4343d1;
+            z-index: 1;
+            position: relative;
+        }
+
+        #contents #video video{
+            width: 100%;
+            height: 450px;
+            text-align: center;
+        }
+
+            /* wave1 */
+            #contents #video #nami{
+                width: 3200px;
+                height: 15px;
+                background: url(../images/yellow-min.png) repeat-x;
+                z-index: 2;
+                position: absolute;
+                bottom: 0;
+                animation: wave 20s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+                transform: translate3d(0, 0, 0);
+            }
+
+            #contents #video #nami:nth-of-type(2) {
+              top: -175px;
+              animation: wave 20s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 20s ease -1.25s infinite;
+              opacity: 1;
+            }
+
+            @keyframes wave {
+              0% {
+                margin-left: 0;
+              }
+              100% {
+                margin-left: -1600px;
+              }
+            }
+
+            @keyframes swell {
+              0%, 100% {
+                transform: translate3d(0,-25px,0);
+              }
+              50% {
+                transform: translate3d(0,5px,0);
+              }
+            }
+
+            #contents section#what{
+                width: 100%;
+                height: 100%;
+                padding-bottom: 15px;
+                background-color: #fde834;
+                text-align: center;
+            }
+
+                #contents section#what h2{
+                    padding-top: 40px;
+                    font-size: 18px;
+                    color: #4343d1;
+                }
+
+                #contents section#what p{
+                    margin-top: 50px;
+                    color: #4343d1;
+                }
+
+                #contents section#what #threeD{
+                    width: 75%;
+                    height: 360px;
+                    margin: 30px auto 15px auto;
+                    background-image: url(../images/aquarium.png);
+                    background-color: #32b16c;
+                }
+
+                #contents section#what a{
+                    margin-top: 15px;
+                    padding: 3px 10px;
+                    background-color: #4343d1;
+                    color: #FFFFFF;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    transition: background-color 0.3s linear, color 0.3s linear;
+                }
+
+                #contents section#what a:hover{
+                    background-color: #FFFFFF;
+                    color: #F3B10C;
+                }
+
+            
+                /* wave2 */
+            #contents section#images{
+                width: 100%;
+                height: 100%;
+                margin-bottom: 75px;
+                padding-bottom:100px;
+                background-color: #FFF;
+                text-align: center;
+            }
+
+                #contents section#images #nami2{
+                    width: 3200px;
+                    height: 15px;
+                    background: url(../images/yellow-min-I.png) repeat-x;
+                    z-index: 2;
+                    animation: wave 20s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+                    transform: translate3d(0, 0, 0);
+                }
+
+                #contents section#images #nami2:nth-of-type(2) {
+                  top: -175px;
+                  animation: wave 20s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 20s ease -1.25s infinite;
+                  opacity: 1;
+                }
+
+                @keyframes wave {
+                  0% {
+                    margin-left: 0;
+                  }
+                  100% {
+                    margin-left: -1600px;
+                  }
+                }
+
+                @keyframes swell {
+                  0%, 100% {
+                    transform: translate3d(0,-25px,0);
+                  }
+                  50% {
+                    transform: translate3d(0,5px,0);
+                  }
+                }
+
+                    #contents section#images #images-item{
+                        width: 100%;
+                        margin-top: 100px;
+                        padding: 0 200px;
+                        box-sizing: border-box;
+                        display: flex;
+                        justify-content: space-around;
+                    }
+
+                        /* bana4~7の画像の型 */
+                        #contents section#images #images-item .kuhaku{
+                            width: 430px;
+                            height: 450px;
+                        }
+
+                            #contents section#images #images-item .kuhaku a{}
+
+                            /* bana4~7の画像 */
+                            #contents section#images #images-item .kuhaku a:hover{
+                                opacity: 0.8;
+                            }
+
+                                #contents section#images #images-item .kuhaku a img{}
+
+                    #contents section#images #images-item2{
+                        width: 100%;
+                        margin-top: 100px;
+                        padding: 0 200px;
+                        box-sizing: border-box;
+                        display: flex;
+                        justify-content: space-around;
+                    }
+
+                    /* 後で画像を入れる */
+                        #contents section#images #images-item2 .kuhaku{
+                            width: 430px;
+                            height: 450px;
+                        }
+
+                            #contents section#images #images-item2 .kuhaku a{}
+
+                            /* bana4~7の画像 */
+                            #contents section#images #images-item2 .kuhaku a:hover{
+                                opacity: 0.8;
+                            }
+
+                                #contents section#images #images-item2 .kuhaku a img{}
+
+            #contents section#event{
+                width: 100%;
+                height: 100%;
+                padding-bottom: 130px;
+                text-align: center;
+                background-color: #d4ebf8;
+                position: relative;
+            }
+
+                #contents section#event h2{
+                    padding-top: 30px;
+                    font-size: 30px;
+                    font-weight: normal;
+                    margin-bottom: 20px;
+                }
+
+                #contents section#event img{
+                    margin-bottom: 15px;
+                }
+
+                #contents section#event p.mozi{
+                    font-size: 14px;
+                    color: #929292;
+                    margin-bottom: 30px;
+                }
+
+                #contents section#event #bana{
+                    width: 100%;
+                    height: 100%;
+                    padding: 0 200px;
+                    margin-bottom: 40px;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: space-around;
+                }
+
+                    #contents section#event #bana .bana-image{
+                        width: 290px;
+                    }
+
+                        #contents section#event #bana .bana-image a{
+                            color:#0C0B9E;
+                            text-decoration: none;
+                            transition: color 0.3s linear;
+                        }
+
+                        #contents section#event #bana .bana-image a:hover{
+                            color: #FFF;
+                        }
+
+                            #contents section#event #bana .bana-image a img{
+                                width: 290px;
+                                height: 180px;
+                                background-color: #2525ea;
+                                border-radius: 5px;
+                            }
+
+                            #contents section#event #bana .bana-image a img:hover{
+                                opacity: 0.8;
+                            }
+
+                    #contents section#event #event-list a{
+                        padding: 7px 15px;
+                        color: #FFF;
+                        background-color: #496CDD;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        position: absolute;
+                        right: 100px;
+                        bottom: 15px;
+                        transition: color 0.3s linear, background-color 0.3s linear;
+                    }
+
+                    #contents section#event #event-list a:hover{
+                        color: #496CDD;
+                        background-color: #FFFFFF;
+                    }
+
+            #contents section#news{
+                width: 100%;
+                height: 100%;
+                padding-bottom: 30px;
+                text-align: center;
+                background-color: #FFF;
+                position: relative;
+            }
+
+                #contents section#news h2{
+                        padding-top: 30px;
+                        font-size: 30px;
+                        font-weight: normal;
+                        margin-bottom: 20px;
+                    }
+
+                #contents section#news img{}
+
+                #contents section#news p.mozi{
+                    font-size: 14px;
+                    color: #929292;
+                    margin-bottom: 30px;
+                }
+
+                #contents section#news #news-list{
+                    width: 80%;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                    display: flex;
+                    justify-content: space-around;
+                }
+
+                    #contents section#news #news-list .news-num{
+                        width: 230px;
+                        height: 390px;
+                        margin: 0 auto;
+                        border: 1px solid #000000;
+                    }
+
+                        #contents section#news #news-list .news-num a{
+                            color: #FFF;
+                            text-decoration: none;
+                        }
+
+                            #contents section#news #news-list .news-num a .news-image{
+                                width: 230px;
+                            }
+
+                                #contents section#news #news-list .news-num a .news-image img{
+                                    width: 230px;
+                                    height: 150px;
+                                    line-height: 0;
+                                    vertical-align: bottom;
+                                }
+
+                            #contents section#news #news-list .news-num a .news-content{
+                                width: 230px;
+                                height:240px;
+                                background-color: #AEADF8;
+                            }
+
+                                #contents section#news #news-list .news-num a .news-content h1{
+                                    padding: 20px 0;
+                                }
+
+                    #contents section#news #news-list2{
+                        position: absolute;
+                        right: 100px;
+                        bottom: 0;
+                    }
+
+                        #contents section#news #news-list2 a{
+                            padding: 7px 15px;
+                            color: #FFF;
+                            background-color: #496CDD;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            transition: color 0.3s linear, background-color 0.3s linear;
+                        }
+
+                        #contents section#news #news-list2 a:hover{
+                            color: #496CDD;
+                            background-color: #FFFFFF;
+                        }
+
+            #contents #nami3{
+                width: 3200px;
+                height: 15px;
+                margin-top: 30px;
+                background: url(../images/blue-min.png) repeat-x;
+                z-index: 2;
+                animation: wave 20s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+                transform: translate3d(0, 0, 0);
+                }
+
+                #contents section#images #nami2:nth-of-type(2) {
+                  top: -175px;
+                  animation: wave 20s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 20s ease -1.25s infinite;
+                  opacity: 1;
+                }
+
+                @keyframes wave {
+                  0% {
+                    margin-left: 0;
+                  }
+                  100% {
+                    margin-left: -1600px;
+                  }
+                }
+
+                @keyframes swell {
+                  0%, 100% {
+                    transform: translate3d(0,-25px,0);
+                  }
+                  50% {
+                    transform: translate3d(0,5px,0);
+                  }
+                }
+
+                #contents section#info{
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    background-color: #0051cc;
+                }
+
+                    #contents section#info #info2{
+                        padding: 150px 0;
+                        display: flex;
+                        justify-content: space-around;
+                    }
+
+                        #contents section#info #info2 #data{
+                            width: 700px;
+                            height: 500px;
+                        }
+
+                            #contents section#info #info2 #data h2{
+                                color: #fff;
+                            }
+
+                            #contents section#info #info2 #data dl {
+                                width:300px;
+                                margin: 50px auto;
+                                color: #fff;
+                            }
+                            #contents section#info #info2 #data dt {
+                                float:left;
+                                clear:left;
+                                width:60px;
+                                margin-bottom: 50px;
+                            }
+                            #contents section#info #info2 #data dd {
+                                float:left;
+                                width:240px;
+                            }
+
+                            #contents section#info #info2 #data dd#other-dd {
+                                margin-bottom: 50px;
+                            }
+
+                        #contents section#info #info2 #map{
+                            background-color: #FFF;
+                            width: 500px;
+                            height: 500px;
+                        }
+
+            footer{
+                width: 100%;
+                height: 150px;
+                position: relative;
+                text-align: center;
+                padding: 80px 0;
+            }
+
+                footer small#copy{
+                    display: block;
+                }
+
+                footer .icon{
+                    width: 138px;
+                    height: 60px;
+                    background-image: url(../images/logo/logo.svg);
+                    margin: 24px 0 0;
+                    display: inline-block;
+                }

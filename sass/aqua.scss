@@ -1,0 +1,250 @@
+/*************************************
+MIXINS(ベンダープレフィックス)
+*************************************/
+@mixin set-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+//文字色
+$color: #fff;
+$hover-color: #4343d1;
+$sub-color: #4343d1;
+    
+body{
+    background-color: #222;
+}
+
+    div#option{
+        padding-right: 30px;
+        @include set-prefix(display, flex);
+        @include set-prefix(justify-content, flex-end);
+
+        & a{
+            color: $color;
+            margin: 20px 0;
+            padding: 0 20px;
+            text-decoration: none;
+            border-right: solid 1px #FFF;
+            @include set-prefix(transition, color 0.3s linear);
+            
+            &:last-child{
+                margin-right: 40px;
+                border-right: none;
+                
+            }
+            
+            &:hover{
+                color: $hover-color;
+            }
+            
+            &.cursor{
+                cursor: default;
+            }
+            
+        }
+        
+    }
+
+    header{
+            width: 100%;
+            margin: 50px auto;
+            text-align: center;
+
+            & img{
+                width: 70%;
+            }
+        }
+
+    nav{
+        width: 100%;
+        margin-bottom: 20px;
+        @include set-prefix(display, flex);
+        @include set-prefix(justify-content, center);
+        
+        & p{
+            color: $color;
+            cursor: pointer;
+            padding: 0 20px;
+            @include set-prefix(transition,color 0.3s linear);
+            
+            &:hover{
+                color: $hover-color;
+            }
+            
+        }
+        
+        & div.icon{
+            width: 138px;
+            height: 60px;
+            background-image: url(../images/logo/logo.svg);
+        }
+        
+    }
+
+$img-size: 200px;
+
+//メニュー押したら画像がでてくる画像一覧
+    div#item_list{
+        width: 100%;
+        height: $img-size + 20px;
+        @include set-prefix(display, flex);
+        @include set-prefix(justify-content, center);
+        
+        & div#img_info{
+            width: 70%;
+            height: 100%;
+            margin-bottom: 50px;
+            position: relative;
+            
+            & p{
+                width: 100%;
+                color: $color;
+                border: #FFF solid 1px;
+                padding: 100px 0;
+                text-align: center;
+                position: absolute;
+            }
+        }
+        
+        & div.item_1{
+            margin-left: 60px;
+            
+            & a{
+                text-decoration: none;
+                
+                & dl.item_info{
+                    color: $color;
+                    
+                    & img{
+                        padding: 0;
+                        
+                    &:hover{
+                        opacity: 0.7;
+                        }
+                    }
+                    
+                    & div.item_contents{
+                        max-width: 200px;
+                        
+                        & dt.item_head{
+                            float:left;
+                            clear:left;
+                            margin-bottom: 10px;
+                        }
+                        
+                        & dd.item_body{
+                            float: left;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        
+        & div.item_2{
+            margin-left: 60px;
+            
+            & a{
+                text-decoration: none;
+                
+                & dl.item_info{
+                    color: $color;
+                    
+                    & img{
+                        padding: 0;
+                        
+                    &:hover{
+                        opacity: 0.7;
+                        }
+                    }
+                    
+                    & div.item_contents{
+                        max-width: 200px;
+                        
+                        & dt.item_head{
+                            float:left;
+                            clear:left;
+                            margin-bottom: 10px;
+                        }
+                        
+                        & dd.item_body{
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+        
+        & div.item_3{
+            margin-left: 60px;
+            
+            & a{
+                text-decoration: none;
+                
+                & dl.item_info{
+                    color: $color;
+                    
+                    & img{
+                        padding: 0;
+                        
+                    &:hover{
+                        opacity: 0.7;
+                        }
+                    }
+                    
+                    & div.item_contents{
+                        max-width: 200px;
+                        
+                        & dt.item_head{
+                            float:left;
+                            clear:left;
+                            margin-bottom: 10px;
+                        }
+                        
+                        & dd.item_body{
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+        
+        & div.item_4{
+            margin-left: 60px;
+            
+            & a{
+                text-decoration: none;
+                
+                & dl.item_info{
+                    color: $color;
+                    
+                    & img{
+                        padding: 0;
+                        
+                    &:hover{
+                        opacity: 0.7;
+                        }
+                    }
+                    
+                    & div.item_contents{
+                        max-width: 200px;
+                        
+                        & dt.item_head{
+                            float:left;
+                            clear:left;
+                            margin-bottom: 10px;
+                        }
+                        
+                        & dd.item_body{
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }

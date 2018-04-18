@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/*************************************
+MIXINS(ベンダープリフィックス)
+*************************************/
+body {
+  /* 画像ファイルの指定 */
+  background-image: url(../images/purchase_images/body_img01.jpg);
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+  /* 背景画像が読み込まれる前に表示される背景のカラー */
+  background-color: #222; }
+
+div#pankuzu-list {
+  -webkit-display: flex;
+  -ms-display: flex;
+  -moz-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center; }
+  div#pankuzu-list p {
+    margin-top: 40px;
+    padding: 15px 60px;
+    color: #FFF;
+    border: solid 1px #575757;
+    background-color: #575757;
+    position: relative; }
+    div#pankuzu-list p#arrow {
+      color: #FFF;
+      background-color: #4343d1;
+      border: solid 1px #4343d1; }
+      div#pankuzu-list p#arrow:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: -23px;
+        right: 50%;
+        left: 50%;
+        border: 12px solid transparent;
+        border-top: 12px solid #4343d1; }
+
+div#member {
+  max-width: 90%;
+  min-height: 400px;
+  margin: 40px auto 0 auto;
+  background-color: rgba(65, 65, 65, 0.8); }
+  div#member h1 {
+    -webkit-display: flex;
+    -ms-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    display: flex;
+    position: relative;
+    padding: 25px 40px 20px 0;
+    border-bottom: dashed 2px #FFF; }
+    div#member h1:after {
+      border-top: 5px solid #4343d1;
+      content: '';
+      display: block;
+      height: 0;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 50%; }
+    div#member h1 p {
+      color: #FFF;
+      font-size: 20px;
+      margin: 10px 0 0 10px; }
+    div#member h1 img {
+      margin-right: 10px; }
+  div#member section#end {
+    width: 80%;
+    margin: 20px auto; }
+    div#member section#end p {
+      text-align: center;
+      color: #FFF; }
+
+div#btn {
+  -webkit-display: flex;
+  -ms-display: flex;
+  -moz-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  div#btn a {
+    margin: 0 20px;
+    text-decoration: none; }
+    div#btn a#back_btn {
+      background-color: #4343d1;
+      text-align: center;
+      border: none;
+      box-sizing: border-box;
+      color: #fff;
+      height: 40px;
+      line-height: 40px;
+      width: 30%;
+      -webkit-transition: background-color 0.3s linear;
+      -ms-transition: background-color 0.3s linear;
+      -moz-transition: background-color 0.3s linear;
+      -o-transition: background-color 0.3s linear;
+      transition: background-color 0.3s linear; }
+      div#btn a#back_btn:hover {
+        background-color: #8787E9; }

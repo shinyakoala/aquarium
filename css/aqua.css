@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/*************************************
+MIXINS(ベンダープレフィックス)
+*************************************/
+/* line 17, ../sass/aqua.scss */
+body {
+  background-color: #222;
+}
+
+/* line 21, ../sass/aqua.scss */
+div#option {
+  padding-right: 30px;
+  -webkit-display: flex;
+  -ms-display: flex;
+  -moz-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+}
+/* line 26, ../sass/aqua.scss */
+div#option a {
+  color: #fff;
+  margin: 20px 0;
+  padding: 0 20px;
+  text-decoration: none;
+  border-right: solid 1px #FFF;
+  -webkit-transition: color 0.3s linear;
+  -ms-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+/* line 34, ../sass/aqua.scss */
+div#option a:last-child {
+  margin-right: 40px;
+  border-right: none;
+}
+/* line 40, ../sass/aqua.scss */
+div#option a:hover {
+  color: #4343d1;
+}
+/* line 44, ../sass/aqua.scss */
+div#option a.cursor {
+  cursor: default;
+}
+
+/* line 52, ../sass/aqua.scss */
+header {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+/* line 57, ../sass/aqua.scss */
+header img {
+  width: 70%;
+}
+
+/* line 62, ../sass/aqua.scss */
+nav {
+  width: 100%;
+  margin-bottom: 20px;
+  -webkit-display: flex;
+  -ms-display: flex;
+  -moz-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+/* line 68, ../sass/aqua.scss */
+nav p {
+  color: #fff;
+  cursor: pointer;
+  padding: 0 20px;
+  -webkit-transition: color 0.3s linear;
+  -ms-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+/* line 74, ../sass/aqua.scss */
+nav p:hover {
+  color: #4343d1;
+}
+/* line 80, ../sass/aqua.scss */
+nav div.icon {
+  width: 138px;
+  height: 60px;
+  background-image: url(../images/logo/logo.svg);
+}
+
+/* line 91, ../sass/aqua.scss */
+div#item_list {
+  width: 100%;
+  height: 220px;
+  -webkit-display: flex;
+  -ms-display: flex;
+  -moz-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+/* line 97, ../sass/aqua.scss */
+div#item_list div#img_info {
+  width: 70%;
+  height: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+/* line 103, ../sass/aqua.scss */
+div#item_list div#img_info p {
+  width: 100%;
+  color: #fff;
+  border: #FFF solid 1px;
+  padding: 100px 0;
+  text-align: center;
+  position: absolute;
+}
+/* line 113, ../sass/aqua.scss */
+div#item_list div.item_1 {
+  margin-left: 60px;
+}
+/* line 116, ../sass/aqua.scss */
+div#item_list div.item_1 a {
+  text-decoration: none;
+}
+/* line 119, ../sass/aqua.scss */
+div#item_list div.item_1 a dl.item_info {
+  color: #fff;
+}
+/* line 122, ../sass/aqua.scss */
+div#item_list div.item_1 a dl.item_info img {
+  padding: 0;
+}
+/* line 125, ../sass/aqua.scss */
+div#item_list div.item_1 a dl.item_info img:hover {
+  opacity: 0.7;
+}
+/* line 130, ../sass/aqua.scss */
+div#item_list div.item_1 a dl.item_info div.item_contents {
+  max-width: 200px;
+}
+/* line 133, ../sass/aqua.scss */
+div#item_list div.item_1 a dl.item_info div.item_contents dt.item_head {
+  float: left;
+  clear: left;
+  margin-bottom: 10px;
+}
+/* line 139, ../sass/aqua.scss */
+div#item_list div.item_1 a dl.item_info div.item_contents dd.item_body {
+  float: left;
+}
+/* line 148, ../sass/aqua.scss */
+div#item_list div.item_2 {
+  margin-left: 60px;
+}
+/* line 151, ../sass/aqua.scss */
+div#item_list div.item_2 a {
+  text-decoration: none;
+}
+/* line 154, ../sass/aqua.scss */
+div#item_list div.item_2 a dl.item_info {
+  color: #fff;
+}
+/* line 157, ../sass/aqua.scss */
+div#item_list div.item_2 a dl.item_info img {
+  padding: 0;
+}
+/* line 160, ../sass/aqua.scss */
+div#item_list div.item_2 a dl.item_info img:hover {
+  opacity: 0.7;
+}
+/* line 165, ../sass/aqua.scss */
+div#item_list div.item_2 a dl.item_info div.item_contents {
+  max-width: 200px;
+}
+/* line 168, ../sass/aqua.scss */
+div#item_list div.item_2 a dl.item_info div.item_contents dt.item_head {
+  float: left;
+  clear: left;
+  margin-bottom: 10px;
+}
+/* line 174, ../sass/aqua.scss */
+div#item_list div.item_2 a dl.item_info div.item_contents dd.item_body {
+  float: left;
+}
+/* line 182, ../sass/aqua.scss */
+div#item_list div.item_3 {
+  margin-left: 60px;
+}
+/* line 185, ../sass/aqua.scss */
+div#item_list div.item_3 a {
+  text-decoration: none;
+}
+/* line 188, ../sass/aqua.scss */
+div#item_list div.item_3 a dl.item_info {
+  color: #fff;
+}
+/* line 191, ../sass/aqua.scss */
+div#item_list div.item_3 a dl.item_info img {
+  padding: 0;
+}
+/* line 194, ../sass/aqua.scss */
+div#item_list div.item_3 a dl.item_info img:hover {
+  opacity: 0.7;
+}
+/* line 199, ../sass/aqua.scss */
+div#item_list div.item_3 a dl.item_info div.item_contents {
+  max-width: 200px;
+}
+/* line 202, ../sass/aqua.scss */
+div#item_list div.item_3 a dl.item_info div.item_contents dt.item_head {
+  float: left;
+  clear: left;
+  margin-bottom: 10px;
+}
+/* line 208, ../sass/aqua.scss */
+div#item_list div.item_3 a dl.item_info div.item_contents dd.item_body {
+  float: left;
+}
+/* line 216, ../sass/aqua.scss */
+div#item_list div.item_4 {
+  margin-left: 60px;
+}
+/* line 219, ../sass/aqua.scss */
+div#item_list div.item_4 a {
+  text-decoration: none;
+}
+/* line 222, ../sass/aqua.scss */
+div#item_list div.item_4 a dl.item_info {
+  color: #fff;
+}
+/* line 225, ../sass/aqua.scss */
+div#item_list div.item_4 a dl.item_info img {
+  padding: 0;
+}
+/* line 228, ../sass/aqua.scss */
+div#item_list div.item_4 a dl.item_info img:hover {
+  opacity: 0.7;
+}
+/* line 233, ../sass/aqua.scss */
+div#item_list div.item_4 a dl.item_info div.item_contents {
+  max-width: 200px;
+}
+/* line 236, ../sass/aqua.scss */
+div#item_list div.item_4 a dl.item_info div.item_contents dt.item_head {
+  float: left;
+  clear: left;
+  margin-bottom: 10px;
+}
+/* line 242, ../sass/aqua.scss */
+div#item_list div.item_4 a dl.item_info div.item_contents dd.item_body {
+  float: left;
+}
